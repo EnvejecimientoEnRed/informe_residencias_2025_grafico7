@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Centros residenciales según tipo</title>
+
+<!-- =================================================
+     ESTILOS GENERALES DE LA PÁGINA (CSS)
+     Aquí se define la apariencia, dimensiones,
+     tipografía, márgenes y distribución de los elementos.
+================================================== -->
+
+<style>
+
+    /* Configuración general del documento */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: #ffffff;
+    }
+
+    /* Ancho máximo y centrado del contenido */
+    .contenedor {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    /* CABECERA: título a la izquierda y logo a la derecha */
+    .cabecera {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 15px;
+    }
+
+    /* Formato del título principal */
+    .cabecera h1 {
+        font-size: 22px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    /* Dimensiones y ajuste del logotipo */
+    .cabecera img {
+        max-width: 110px;
+        max-height: 65px;
+        object-fit: contain;
+    }
+
+    /* Formato del texto explicativo situado bajo la cabecera */
+    .descripcion {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #555555;
+        margin-bottom: 20px;
+    }
+
+    /* Dimensiones del espacio reservado para el mapa */
+    #datawrapper-vis-kuG3W {
+        width: 100%;
+        min-height: 480px;
+    }
+
+    /* AJUSTES PARA PANTALLAS PEQUEÑAS (MÓVILES) */
+    @media (max-width: 600px) {
+        .cabecera h1 {
+            font-size: 18px;
+        }
+
+        .cabecera img {
+            max-width: 85px;
+        }
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- =================================================
+     CONTENEDOR PRINCIPAL
+     Agrupa todos los elementos de la página y limita
+     su anchura máxima a 1100 píxeles.
+================================================== -->
+
+<div class="contenedor">
+
+    <!-- =================================================
+         CABECERA
+         Incluye el título de la página y el logotipo.
+         El título se sitúa a la izquierda y el logo
+         a la derecha.
+    ================================================== -->
+
+    <div class="cabecera">
+        <h1>Centros residenciales según tipo</h1>
+        <img src="logo.png" alt="Logotipo">
+    </div>
+
+
+    <!-- =================================================
+         DESCRIPCIÓN
+         Texto introductorio para explicar el contenido
+         y el objetivo del mapa.
+         Se puede modificar sin alterar el resto.
+    ================================================== -->
+
+    <div class="descripcion">
+        El mapa muestra la distribución territorial de los centros
+        residenciales según su tipología, permitiendo comparar
+        las diferencias existentes entre las provincias españolas.
+    </div>
+
+
+    <!-- =================================================
+         MAPA DE DATAWRAPPER
+         Inserta el mapa publicado en Datawrapper.
+         Para sustituirlo por otro mapa hay que cambiar
+         el identificador kuG3W en el código de inserción
+         y en el identificador del contenedor.
+    ================================================== -->
+
+    <div id="datawrapper-vis-kuG3W">
+        <script type="text/javascript" defer
+        src="https://datawrapper.dwcdn.net/kuG3W/embed.js"
+        charset="utf-8"
+        data-target="#datawrapper-vis-kuG3W"></script>
+
+        <!-- Imagen alternativa si el navegador no ejecuta JavaScript -->
+        <noscript>
+            <img src="https://datawrapper.dwcdn.net/kuG3W/full.png"
+            alt="Centros residenciales según tipo (Mapa coroplético)">
+        </noscript>
+    </div>
+
+</div>
+
+</body>
+</html>
